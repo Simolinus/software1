@@ -4,7 +4,7 @@ zander_in_cm = float(input("Hello fisher! \nPlease enter the length of your Zand
 if zander_in_cm >= 42:
     print("The fish is of proper length!")    
 else:
-    print(f"The fish is {(42 - zander_in_cm):.3f} cm below the size limit")
+    print(f"The fish is {(42 - zander_in_cm):.3f} cm below the size limit. Please release it")
 
 print("\n")
 
