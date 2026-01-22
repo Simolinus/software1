@@ -89,4 +89,4 @@ while loop < N:
         n = n + 1
     loop = loop + 1
     pi_a = 4 * n / N
-print(f"the approx of pi = {pi_a}")
+print(f"the approximation of pi = {pi_a}")
