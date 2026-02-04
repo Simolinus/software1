@@ -55,3 +55,4 @@ while True:
         airport = input("Enter airport's name: ")
         airports_icao[icao] = airport
         existing_airports_icao.add(icao)
+print("Program stopped.")
