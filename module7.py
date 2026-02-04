@@ -41,18 +41,18 @@ existing_airports_icao = set()
 print("Enter a new airport or fetch the information of an existing airport or quit.")
 
 while True:
-    print(f"\n{commands}")
+    print(f"\n{commands}\n")
     command_input = int(input())
     print("\n")
     if command_input == 3:
         break
     if command_input == 2:
-        check_existing_icao = input("Enter airport's ICAO: ")
-        if check_existing_icao in existing_airports_icao:
-            print(f"{airports_icao[icao]}")
+        existing_icao = input("Enter airport's ICAO: ")
+        if existing_icao in existing_airports_icao:
+            print(f"{airports_icao[existing_icao]}")
     if command_input == 1:
-        icao = input("Enter airport's ICAO: ")
-        airport = input("Enter airport's name: ")
-        airports_icao[icao] = airport
-        existing_airports_icao.add(icao)
+        new_icao = input("Enter airport's ICAO: ")
+        new_airport = input("Enter airport's name: ")
+        airports_icao[new_icao] = new_airport
+        existing_airports_icao.add(new_icao)
 print("Program stopped.")
